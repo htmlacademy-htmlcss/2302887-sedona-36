@@ -8,3 +8,11 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+.advantages-header {
+  font-size: 15px;
+  align-content: center;
+}
+.hero {
+  background-image: url(image/index_background.jpg);
+  background-color: rgb(211, 94, 65);
+}
