@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>О красотах Седоны, Аризона, США.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Красоты Седоны, Аризона, США.</title>
+    <link rel="stylesheet" href="css/style.css"
   </head>
 
   <body>
@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-logo">
-          <img class="logo" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны. Мост над ущельем, внизу надпись: City of Sedona.">
+          <img class="logo" src="images/header/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны. Мост над ущельем, внизу надпись: City of Sedona.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -27,13 +27,13 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/search.svg" alt="" aria-hidden="true">
+              <img src="images/header/search.svg" width="18" hight="17" alt="" aria-hidden="true">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/heart.svg" alt="" aria-hidden="true">
+              <img src="images/header/heart.svg" width="18" hight="17" alt="" aria-hidden="true">
               <span>12</span>
               <span class="visually-hidden">Избранное.</span>
             </a>
@@ -49,21 +49,20 @@
 
       <section class="hero">
         <h1 class="visually-hidden">Приезжайте увидеть красоты Седоны!</h1>
-        <img class="background-hero-image" src="images/index-background.svg" alt="Горы и ущелье около Седоны">
-        <img class="hero-title" src="images/text_billboard.svg" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+        <img class="hero-title" src="images/hero/text_billboard.svg" width="438" hight="352" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
       </section>
 
-      <section class="advantages">
+      <section>
         <div>
           <h2 class="visually-hidden">Преймущества Седоны</h2>
-          <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="advantage-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="logo" src="images/photo_1.jpg" alt="Вид с террасы дома в Седоне">
+            <img class="logo" src="images/featches/photo_1.jpg" width="800" hight="384" alt="Вид с террасы дома в Седоне">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -78,7 +77,7 @@
             <p class="advantages-description">Большинство едет в Град-Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <img class="logo" src="images/photo_2.jpg" alt="Вид на мост дьявола">
+            <img class="logo" src="images/featches/photo_2.jpg" width="800" hight="385" alt="Вид на мост дьявола">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -93,17 +92,17 @@
         <ul class="featches-list">
           <li class="featches-item">
             <h3 class="feathes-title">
-            <img src="images/hotel_icon.svg" alt="" aria-hidden="true" > Жильё</h3>
+            <img src="images/featches/hotel_icon.svg" width="75" hight="72" alt="" aria-hidden="true" > Жильё</h3>
             <p class="featches-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="featches-item">
             <h3 class="feathes-title">
-            <img src="images/burger_icon.svg" alt="" aria-hidden="true"> Еда</h3>
+            <img src="images/featches/burger_icon.svg" width="74" hight="70"alt="" aria-hidden="true"> Еда</h3>
             <p class="featches-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="featches-item">
             <h3 class="feathes-title">
-            <img src="images/souvenir_icon.svg" alt="" aria-hidden="true"> Сувениры</h3>
+            <img src="images/featches/souvenir_icon.svg" width="64" hight="" alt="76" aria-hidden="true"> Сувениры</h3>
             <p class="featches-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -115,13 +114,13 @@
         <a class="search-batton" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="subletter">
+      <section class="subletter-index">
         <h2 class="title">Подпишитесь на рассылку</h2>
         <p class="subletter-offer">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
             <span class="visually-hidden">Введите ваш e-mail.</span>
-            <input class="field" type="email" name="email-field" placeholder="Ваш e-mail">
+            <input class="field" type="email" name="email-field" placeholder="Ваш e-mail" required>
           </label>
           <button class="subletter-button" type="submit">Подписаться</button>
         </form>
@@ -136,19 +135,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="https://vk.com/htmlacademy">
-              <img src="images/social_vk.svg" alt="" aria-hidden="true">
+              <img src="images/footer/social_vk.svg" width="24" hight="14"alt="" aria-hidden="true">
               <span class="visually-hidden">В Контакте.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="https://t.me/htmlacademy">
-              <img src="images/social_telegram.svg" alt="" aria-hidden="true">
+              <img src="images/footer/social_telegram.svg" width="18" hight="15" alt="" aria-hidden="true">
               <span class="visually-hidden">Тelegram.</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/social_youtube.svg" alt="" aria-hidden="true">
+              <img src="images/footer/social_youtube.svg" width="22" hight="17" alt="" aria-hidden="true">
               <span class="visually-hidden">You tube.</span>
             </a>
           </li>
@@ -158,15 +157,14 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактный телефон</h2>
         <a class="contacts-phone" href="tel.:+78128121212">
-          +7 (812) 812-12-12
-          <img src="images/namber.svg" alt="" aria-hidden="true">
+          <img src="images/footer/namber.svg" width="331" hight="40" alt="" aria-hidden="true">
         </a>
       </section>
 
       <section class="footer-link">
         <h2 class="visually-hidden">Ссылка на сайт htmlacademy</h2>
         <a href="https://htmlacademy.ru">
-          <img src="images/logo_htmlacademy.svg" alt="Перейти на сайт htmlacademy">
+          <img src="images/footer/logo_htmlacademy.svg" width="115" hight="33"alt="Перейти на сайт htmlacademy">
         </a>
       </section>
 

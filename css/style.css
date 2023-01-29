@@ -1,0 +1,27 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.advantage-title {
+  font-family: '';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  align-content: center;
+  text-transform: uppercase;
+  }
+.hero-title {
+  background-image: url(../images/hero/index_background.jpg);
+}
+.subletter-index {
+  background-image: url(../images/featches/subletter.jpg);
+}
+.background-foto {
+  background-image: url(../images/hotels/filters.jpg);
+}
