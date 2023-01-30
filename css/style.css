@@ -17,11 +17,11 @@
   text-transform: uppercase;
   }
 .hero-title {
-  background-image: url(../images/hero/index_background.jpg);
+  background-image: url(../images/hero/index_background_1.jpg);
 }
 .subletter-index {
-  background-image: url(../images/featches/subletter.jpg);
+  background-image: url(../images/featches/subletter_1.jpg);
 }
-.background-foto {
-  background-image: url(../images/hotels/filters.jpg);
+.hotel-filters {
+  background-image: url(../images/hotels/filters_1.jpg);
 }
