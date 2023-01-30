@@ -1,0 +1,47 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PT Sans'),
+		url('/fonts/ptsans-700.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'),
+		url('/fonts/ptsans-400.woff2') format('woff2');
+}
+.advantage-title {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  align-content: center;
+  text-transform: uppercase;
+  }
+.advantage-text {font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    align-content: center;
+}
+.hero-title {
+  background-image: url(../images/hero/index_background_1.jpg);
+}
+.subletter-index {
+  background-image: url(../images/featches/subletter_1.jpg);
+}
+.hotel-filters {
+  background-image: url(../images/hotels/filters_1.jpg);
+}
