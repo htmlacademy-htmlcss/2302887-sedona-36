@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans Bold';
 	font-style: normal;
 	font-weight: 700;
 	src: local('PT Sans'),
@@ -23,14 +23,14 @@
   clip: rect(0 0 0 0);
 }
 .advantage-title {
-  font-family: 'PT Sans';
+  font-family: "PT Sans Bold", "Arial", sans_serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   align-content: center;
   text-transform: uppercase;
   }
-.advantage-text {font-family: 'PT Sans';
+.advantage-text {font-family: "PT Sans", "Arial", sans_serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
