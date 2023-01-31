@@ -1,13 +1,3 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
 @font-face {
 	font-family: 'PT Sans';
 	font-style: normal;
@@ -21,6 +11,16 @@
 	font-weight: 400;
 	src: local('PT Sans'),
 		url('/fonts/ptsans-400.woff2') format('woff2');
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .advantage-title {
   font-family: 'PT Sans';
@@ -37,11 +37,11 @@
     align-content: center;
 }
 .hero-title {
-  background-image: url(../images/hero/index_background_1.jpg);
+  background-image: url(../images/hero/index_background.jpg);
 }
 .subletter-index {
   background-image: url(../images/featches/subletter_1.jpg);
 }
 .hotel-filters {
-  background-image: url(../images/hotels/filters_1.jpg);
+  background-image: url(../images/hotels/filters_background.jpg);
 }
