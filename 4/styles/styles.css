@@ -1,4 +1,3 @@
-
 *::before,
 *::after {
   box-sizing: border-box;
@@ -42,7 +41,7 @@ img {
 }
 .subletter-index {
   background: rgb(72, 138, 212);
-  background-image: url(../images/features/subletter_1.jpg);
+  background-image: url(../images/features/subletter.jpg);
   }
 .filters {
   background: rgb(62, 127, 201);
@@ -58,17 +57,17 @@ img {
   align-content: center;
   text-transform: uppercase;
 }
+.text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  align-content: center;
+}
 .filters-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: white;
-  align-content: center;
-}
-.text {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
   align-content: center;
 }
 .breadcrumbs-link{
@@ -105,23 +104,59 @@ img {
   align-content: center;
   text-transform: uppercase;
 }
-.advantages-title,.features-item-title {
+.advantages-title,
+.features-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   align-content: center;
   text-transform: uppercase;
 }
-.features-item-text,.hotel-card-price,.advantages-text {
+.features-item-text,
+.hotel-card-price,
+.advantages-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   align-content: center;
 }
 
-.button-card,.button-favorites,.button-favorites-in {
+.button-card,
+.button-favorites,
+.button-favorites-in {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+.subletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-content: center;
+  text-transform: uppercase;
+  color: white;
+  background-color:#82B3D3;
+  border-color: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+}
+.search-batton {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: white;
+  text-transform: uppercase;
+  background-color:#82B3D3;
+}
+.field {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.contacts-phone-namber {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
 }
