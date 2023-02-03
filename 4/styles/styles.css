@@ -1,0 +1,127 @@
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+  src: local("PT Sans"), url('/fonts/ptsans-700.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+  src: local("PT Sans"), url('/fonts/ptsans-400.woff2') format('woff2');
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.hero-title {
+  background: rgb(68, 177, 196);
+  background-image: url(../images/hero/index_background.jpg);
+}
+.subletter-index {
+  background: rgb(72, 138, 212);
+  background-image: url(../images/features/subletter_1.jpg);
+  }
+.filters {
+  background: rgb(62, 127, 201);
+  background-image: url(../images/hotels/filters_background.jpg);
+}
+.white {
+  color: white;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  align-content: center;
+  text-transform: uppercase;
+}
+.filters-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: white;
+  align-content: center;
+}
+.text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  align-content: center;
+}
+.breadcrumbs-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+  align-content: center;
+}
+.hotels-filter-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  align-content: center;
+}
+.hotels-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  align-content: center;
+}
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  align-content: center;
+}
+.rate {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  align-content: center;
+  text-transform: uppercase;
+}
+.advantages-title,.features-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  align-content: center;
+  text-transform: uppercase;
+}
+.features-item-text,.hotel-card-price,.advantages-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-content: center;
+}
+
+.button-card,.button-favorites,.button-favorites-in {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
