@@ -160,3 +160,9 @@ img {
   line-height: 40px;
   color: #000000;
 }
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
