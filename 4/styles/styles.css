@@ -20,7 +20,7 @@ body {
   color: #000000;
   margin: 0;
 }
-body ul {
+ul {
   list-style-type: none;
 }
 img {
@@ -59,6 +59,21 @@ img {
   background-repeat: no-repeat;
   background-position: bottom center, center center;
 }
+.advantages-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+.advantages-list-2 {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+.advantages-list-3 {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
@@ -75,6 +90,28 @@ img {
   margin: 22px 275px 69px 274px;
   color: #333333;
 }
+.advantages-item {
+  width: 400px;
+  height:384px;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+.light {
+  background-color: rgba(131, 179, 211, 0.12);
+ }
+ .semilight {
+  background-color: rgba(131, 179, 211, 0.2);
+ }
+.black {
+  color: #000000;
+}
+.gray {
+  color: #333333;
+}
+.advantage-item-img {
+  width: 800px;
+  height:384px;
+}
 .advantages-item-title {
   font-weight: 700;
   font-size: 24px;
@@ -87,7 +124,10 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #333333;
+}
+.features-list {
+  display: inline-flex;
+  padding: 0;
 }
 .features-title {
   font-weight: 700;
@@ -103,6 +143,15 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+.features-item {
+  width: 400px;
+  height:384px;
+  background-color:rgba(131, 179, 211, 0.12)
+}
+.features-item-white {
+  width: 400px;
+  height:384px;
 }
 .features-item-title {
   font-weight: 700;
@@ -144,6 +193,7 @@ img {
   background-color:#756157;
   width: 376px;
   height: 52px;
+  display: block;
   border-radius: 4px;
   margin: 54px 412px 96px 412px;
 }
@@ -172,6 +222,8 @@ img {
   border: 0;
   width: 452px;
   height: 52px;
+  padding: 0;
+  margin-left: 200px;
 }
 .subletter-button {
   font-weight: 700;
@@ -185,6 +237,7 @@ img {
   border-radius: 0 4px 4px 0;
   width: 232px;
   height: 52px;
+  padding: 0;
 }
 .subletter-index {
   padding: 84px 50px;
@@ -212,12 +265,16 @@ img {
   line-height: 78px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 }
 .breadcrumbs-link{
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
+}
+.hotels {
+  display: inline-flex;
 }
 .hotels-filter-title {
   font-weight: 400;
@@ -236,23 +293,36 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
   width: 191px;
   height: 36px;
-  color: #ffffff;
   background-color:#82b3d3;
-  border-color: #82b3d3;
+  border: 0;
   border-radius: 4px;
   text-transform: uppercase;
-  align-items: center;
 }
 .button-reset{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  width: 191px;
+  height: 36px;
   text-transform: uppercase;
+  display: block;
   background:none;
   border: 0;
+}
+.select-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 .hotel-card-link {
   font-weight: 700;
@@ -260,11 +330,6 @@ img {
   line-height: 28px;
   text-decoration: none;
   color: #000000;
-}
-.select-control {
-  font-weight: 400;
-  line-height: 21px;
-  color: #333333;
 }
 .pagination-link {
   font-weight: 700;
@@ -286,15 +351,24 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  display: block;
+  width: 140px;
+  height: 37px;
   text-align: center;
   text-transform: uppercase;
   background: #f2f2f2;
 }
 .hotel-card-price {
   font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 .button-card {
+  width: 140px;
+  height: 36px;
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -302,10 +376,13 @@ img {
   text-decoration: none;
   color: #ffffff;
   background-color:#756157;
-  width: 140px;
-  height: 36px;
+  border-radius: 4px;
 }
 .button-favorites {
+  width: 140px;
+  height: 36px;
+  border: 0;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -313,16 +390,13 @@ img {
   text-decoration: none;
   color: #ffffff;
   background-color:#82B3D3;
-  border: 0;
-  width: 140px;
-  height: 36px;
-  border-radius: 4px;
 }
 .in {
   background-color:#7db54f;
 }
 .pagination-item {
-  display: inline;
+  display: inline-flex;
+  text-align: center;
 }
 .next {
   font-weight: 400;
@@ -336,4 +410,7 @@ img {
 }
 .social-item {
   display: inline;
+}
+.page-footer {
+  display: inline-flex;
 }
