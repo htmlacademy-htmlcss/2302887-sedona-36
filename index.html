@@ -7,39 +7,39 @@
   </head>
 
   <body>
-  <div class="wrapper">
+  <div class="site-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo">
-          <img class="logo" src="images/header/logo_sedona.svg" alt="Логотип Седоны: мост дъявола над ущельем, внизу надпись: City of Sedona.">
+          <img class="logo" src="images/header/logo_sedona.svg" width="140"  height= "70" alt="Логотип Седоны: мост дъявола над ущельем, внизу надпись: City of Sedona.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list-2">
-          <li class="navigation-item-2">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск.</span>
-              <img src="images/header/Поиск.svg" alt="">
+              <img src="images/header/search.svg" alt="">
             </a>
           </li>
-          <li class="navigation-item-2">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">12</span>
               <span class="visually-hidden">Избранное.</span>
-              <img src="images/header/Избранное.svg" alt="">
+              <img src="images/header/heart.svg" alt="">
             </a>
           </li>
         </ul>
-        <a class="navigation-link-button" href="#"><span class="here">Хочу сюда!</span></a>
+        <a class="navigation-link-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -121,21 +121,25 @@
       </section>
 
       <section class="search-hotel">
-        <h2 class="search-title">Заинтересовались?</h2>
-        <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-batton" href="hotels.html"><span class="search">Поиск гостиницы в Седоне</span></a>
+        <div class="search-hotel-wrapper">
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="search-batton" href="hotels.html">Поиск гостиницы в Седоне</a>
+        </div>
       </section>
 
       <section class="subletter-index">
-        <h2 class="subletter-title white">Подпишитесь на рассылку</h2>
-        <p class="subletter-text white">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <span class="visually-hidden">Введите ваш e-mail.</span>
-            <input class="subletter-field" type="email" name="email-field" placeholder="Ваш e-mail" required>
-          </label>
-          <button class="subletter-button" type="submit">Подписаться</button>
-        </form>
+        <div class="subletter-index-wrapper">
+          <h2 class="subletter-title white">Подпишитесь на рассылку</h2>
+          <p class="subletter-text white">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <form class="subletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label>
+              <span class="visually-hidden">Введите ваш e-mail.</span>
+              <input class="subletter-field" type="email" name="email-field" placeholder="Ваш e-mail" required>
+            </label>
+            <button class="subletter-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
 
     </main>

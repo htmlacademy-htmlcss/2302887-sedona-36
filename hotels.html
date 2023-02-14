@@ -7,7 +7,7 @@
   </head>
 
   <body>
-  <div class="wrapper">
+  <div class="site-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -25,21 +25,21 @@
           </li>
         </ul>
         <ul class="navigation-list-2">
-          <li class="navigation-item-2">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск.</span>
-              <img src="images/header/Поиск.svg" alt="">
+              <img src="images/header/search.svg" alt="">
             </a>
           </li>
-          <li class="navigation-item-2">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">12</span>
               <span class="visually-hidden">Избранное.</span>
-              <img src="images/header/Избранное.svg" alt="">
+              <img src="images/header/heart.svg" alt="">
             </a>
           </li>
         </ul>
-        <a class="navigation-link-button" href="#"><span class="here">Хочу сюда!</span></a>
+        <a class="navigation-link-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -257,15 +257,17 @@
       </section>
 
       <section class="subletter-hotels">
-        <h2 class="subletter-title">Подпишитесь на рассылку</h2>
-        <p class="subletter-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <form class="subletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <span class="visually-hidden">Введите ваш e-mail.</span>
-            <input class="subletter-field background" type="email" placeholder="Ваш e-mail">
-          </label>
-          <button class="subletter-button" type="submit">Подписаться</button>
-        </form>
+        <div class="subletter-hotels-wrapper">
+          <h2 class="subletter-title">Подпишитесь на рассылку</h2>
+          <p class="subletter-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <form class="subletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label>
+              <span class="visually-hidden">Введите ваш e-mail.</span>
+              <input class="subletter-field background" type="email" placeholder="Ваш e-mail">
+            </label>
+            <button class="subletter-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
 
     </main>
