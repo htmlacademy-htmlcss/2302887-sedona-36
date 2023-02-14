@@ -599,6 +599,12 @@ img {
 .in {
   background-color:#7db54f;
 }
+.pagination-list {
+  display: inline-flex;
+  gap: 8px;
+  padding: 0;
+  margin-left: 70px;
+}
 .pagination-item {
   display: inline-flex;
   text-align: center;
