@@ -514,6 +514,7 @@ img {
   grid-template-columns: 360px 360px auto;
   list-style-type: none;
   margin: 30px;
+  margin-bottom: 60px;
 }
 .hotel-card {
   display: block;
@@ -598,6 +599,14 @@ img {
 }
 .in {
   background-color:#7db54f;
+}
+.pagination-list {
+  display: inline-flex;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 60px;
 }
 .pagination-item {
   display: inline-flex;
