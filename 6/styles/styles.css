@@ -112,11 +112,10 @@ img {
   text-transform: uppercase;
   background-color:#756157;
   min-width: 160px;
-  height: 30px;
+  height: 31px;
   text-align: center;
   border-radius: 6px;
-  padding-top: 4px;
-  margin-top: 14px;
+  padding-top: 5px;
   margin-left: 20px;
 }
 
@@ -125,7 +124,7 @@ img {
   text-align: center;
   background-color: #cbcdce;
   background-image: url("../images/hero/divider.svg"), url("../images/hero/hero_background.jpg");
-  background-size: 100% cover;
+  background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: bottom center, center center;
 }
@@ -355,7 +354,7 @@ img {
   min-height: 415px;
   background: #488ad4;
   background-image: url("../images/features/subletter.jpg");
-  background-size: 100% cover;
+  background-size: 100%, cover;
   background-repeat: no-repeat;
 }
 
@@ -457,7 +456,7 @@ img {
 .filters-wrapper {
   background: #3e7fc9;
   background-image: url("../images/hotels/filters_background.jpg");
-  background-size: 100% cover;
+  background-size: 100%,cover;
   height: 307px;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -641,8 +640,7 @@ img {
 .hotel-card {
   display: block;
   width: 300px;
-  margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   border: 1px solid #f2f2f2;
   border-radius: 4px;
 }
