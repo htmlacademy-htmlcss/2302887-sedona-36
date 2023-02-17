@@ -242,7 +242,9 @@ img {
 }
 
 .features-list {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   padding: 0;
   list-style-type: none;
 }
@@ -575,7 +577,6 @@ img {
 
 .filters-view {
   display: flex;
-
   align-items: center;
   width: 1060px;
   height: 49px;
