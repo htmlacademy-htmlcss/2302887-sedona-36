@@ -441,40 +441,47 @@ img {
   min-height: 120px;
 }
 
- .social-item {
-  display: inline-block;
-  width: 47px;
-  height: 40px;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 141px;
   padding: 0;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
+.social-item {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.social-button {
+  display: block;
+  width: 47px;
+  height: 40px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
 .contacts-phone-namber {
-  width: 680px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  padding: 40px 20px 30px;
-  text-align: center;
-
 }
 
 .website {
-  display: block;
-   width: 115px;
-   height: 33px;
-   padding-top: 40px;
-   padding-bottom: 30px;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .filters-wrapper {
@@ -661,7 +668,8 @@ img {
 }
 
 .hotel-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 300px;
   padding: 20px;
   border: 1px solid #f2f2f2;
@@ -673,12 +681,12 @@ img {
 }
 
 .hotel-card-title {
-  color: #000;
+  color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  width: 300px;
-  min-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .hotel-card-price {
@@ -689,6 +697,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin-top: auto;
 }
 
 .button-row {
