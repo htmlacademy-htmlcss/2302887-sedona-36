@@ -133,6 +133,7 @@ img {
 .hero {
   min-height: 352px;
   padding: 51px 50px 82px;
+  margin-bottom: 69px;
   text-align: center;
   background-color: #cbcdce;
   background-image: url("../images/hero/divider.svg"), url("../images/hero/hero_background.jpg");
@@ -148,7 +149,7 @@ img {
 }
 
 .advantages {
-  padding-top: 69px;
+  margin-bottom: 69px;
 }
 .advantages-title {
   font-weight: 700;
@@ -251,7 +252,7 @@ img {
 }
 
 .features {
-  padding-top: 64px;
+
 }
 
 .features-list {
