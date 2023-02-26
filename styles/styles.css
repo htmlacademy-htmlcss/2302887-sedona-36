@@ -116,6 +116,15 @@ img {
   border-bottom: 2px solid #756257;
 }
 
+.navigation-current-hotels::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  border-bottom: 1px solid #756257;
+}
+
 .navigation-link:hover {
   opacity: 60%;
 }
@@ -559,15 +568,21 @@ img {
 }
 
 .social-item {
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 47px;
-  height: 40px;
+  height: 50px;
+}
+
+.social-icon {
+  fill: #83B3D3;
 }
 
 .social-icon:hover {
@@ -618,18 +633,22 @@ img {
   padding-bottom: 8px;
 }
 
-.academy-icon:hover,
-.academy-icon:focus {
+.website-logo {
+  fill: #000000;
+}
+
+.website-logo:hover,
+.website-logo:focus {
   fill: #756157;
 }
 
-.academy-icon:active {
+.website-logo:active {
   fill: rgba(117, 97, 87, 0.3);
 }
 
 .filters-wrapper {
   background: #3e7fc9;
-  background-image: url("../images/hotels/filters_background.jpg");
+  background-image: url("../images/filters/filters_background.jpg");
   background-size: 100%,cover;
   height: 307px;
   background-repeat: no-repeat;
