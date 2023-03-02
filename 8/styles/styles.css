@@ -527,7 +527,6 @@ img {
   padding-left: 17px;
   outline: none;
   border: 3px solid #83B3D3;
-
 }
 
 .subletter-field:not(:placeholder-shown) {
@@ -552,7 +551,9 @@ img {
   cursor: pointer;
 }
 
-.subletter-button:hover {
+.subletter-button:hover,
+.subletter-button:focus {
+  color: #E6E6E6;
   background-color: #68A2CA;
 }
 
@@ -772,6 +773,11 @@ img {
   line-height: 23px;
   color: #ffffff;
   text-align: left;
+  cursor: pointer;
+}
+
+.hotels-control-input {
+  cursor: pointer;
 }
 
 .control:hover {
@@ -784,7 +790,69 @@ img {
 
 .hotel-filter-price {
   width: 288px;
+  height: 160px;
   margin-left: 140px;
+}
+
+.hotels-filter-group-price {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-filter-title {
+  margin-bottom: 32px;
+}
+
+.hotels-control-price {
+  position: relative;
+  display: flex;
+}
+.range-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  padding: 12px 40px 12px 20px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.max {
+  margin-left: 2px;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.range-input:hover {
+  background: #E6E6E6;
+}
+
+.range-input:focus {
+  box-sizing: border-box;
+  background: #E6E6E6;
+  padding-left: 17px;
+  outline: none;
+  border: 3px solid #83B3D3;
+}
+
+.from {
+  position: absolute;
+  left: 106px;
+  top: 14px;
+  opacity: 0.3;
+}
+
+.to {
+  position: absolute;
+  left: 252px;
+  top: 14px;
+  opacity: 0.3;
 }
 
 .hotel-filter-buttons {
