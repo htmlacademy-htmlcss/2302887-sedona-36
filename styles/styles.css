@@ -361,9 +361,10 @@ img {
 }
 
 .features-item {
-  width: 400px;
-  height:385px;
-  background-color:rgba(131, 179, 211, 0.12)
+  width: 230px;
+  height:238px;
+  background-color:rgba(131, 179, 211, 0.12);
+  padding: 81px 85px;
 }
 
 .clear {
@@ -394,8 +395,8 @@ img {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 183px;
+  margin-top: 102px;
+  margin-bottom: 30px;
 }
 
 .features-item-text {
@@ -405,7 +406,6 @@ img {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding-top: 30px;
 }
 
 .search-hotel {
@@ -513,8 +513,7 @@ img {
   border: 0;
   min-width: 452px;
   height: 52px;
-  padding: 0;
-  padding-left: 20px;
+  padding: 14px 20px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -537,9 +536,10 @@ img {
 }
 
 .subletter-button {
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -548,13 +548,11 @@ img {
   border-radius: 0 4px 4px 0;
   min-width: 232px;
   min-height: 52px;
-  padding: 8px;
+  padding: 14px;
   cursor: pointer;
 }
 
-.subletter-button:hover,
-.subletter-button:focus {
-  outline: none;
+.subletter-button:hover {
   background-color: #68A2CA;
 }
 
