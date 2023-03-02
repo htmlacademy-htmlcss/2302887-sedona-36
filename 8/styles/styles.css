@@ -761,11 +761,11 @@ img {
 .hotels-filter-list {
   list-style-type: none;
   padding: 0;
-  margin-top: 32px;
+  margin: 0;
 }
 
 .hotels-filter-item {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .hotels-control {
