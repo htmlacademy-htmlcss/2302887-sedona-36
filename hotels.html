@@ -110,7 +110,17 @@
               </ul>
             </fieldset>
             <div class="hotel-filter-price">
-              <p class="hotels-filter-title">Стоимость, ₽:</p>
+              <fieldset class="hotels-filter-group-price">
+                <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+                <div class="range-wrapper-inputs">
+                  <lable class="hotels-control-price">
+                    <span class="from">от</span>
+                    <span class="to">до</span>
+                    <input class="range-input" type="number" value="0" name="min-price">
+                    <input class="range-input max" type="number" value="9000" name="max-price">
+                  </lable>
+                </div>
+              </fieldset>
             </div>
             <div class="hotel-filter-buttons">
               <button class="button-apply" type="submit">Применить</button>
