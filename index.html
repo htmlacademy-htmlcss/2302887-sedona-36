@@ -18,7 +18,7 @@
             <a class="navigation-link navigation-current">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link control" href="#">О Седоне</a>
+            <a class="navigation-link control" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link control" href="hotels.html">Гостиницы</a>
@@ -192,6 +192,50 @@
         </a>
       </section>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <lable class="arrival-data-title" for="arrival">Дата Заезда:</lable>
+              <input class="arrival-data-field field" type="text" id="arrival" name="arrival" placeholder="Укажите дату">
+              <span class="visually-hidden arrival-text">Мы не можем отправить вас в прошлое.</span>
+              <span class="visually-hidden arrival-text">Сообщение об ошибке.</span>
+            </p>
+            <p class="field-group">
+              <lable class="departure-data-title" for="arrival">Дата Выезда:</lable>
+              <input class="departure-data-field field" type="text" id="departure" name="departure" placeholder="Укажите дату">
+              <span class="visually-hidden departute-text">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="visually-hidden departute-text">На эти даты нет свободных номеров.</span>
+              <span class="visually-hidden departute-text">Сообщение об ошибке.</span>
+            </p>
+            <p class="guests">
+              <lable class="adults-guests-title" for="adults">Взрослые:</lable>
+              <input class="guests-field" type="number" id="adults" name="adults" placeholder="2">
+              <lable class="children-guests-title split" for="children">Дети:</lable>
+
+              <button class="children-info" type="button">
+                <span class="triangle"></span>
+                <span class="tooltip">
+                  <span class="tooltip-text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </button>
+
+              <input class="guests-field children-guests-field" type="number" id="children" name="children" placeholder="2">
+            </p>
+            <button class="search-hotels-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </div>
   </body>
 

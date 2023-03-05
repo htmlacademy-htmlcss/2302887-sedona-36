@@ -69,6 +69,7 @@ img {
 
 .navigation-logo {
   position: relative;
+  z-index: 1;
   margin-right: 30px;
   height: 64px;
 }
@@ -197,15 +198,26 @@ img {
 }
 
 .hero {
+  position: relative;
   min-height: 352px;
-  padding: 51px 50px 82px;
+  padding: 51px 0 82px;
   margin-bottom: 69px;
   text-align: center;
   background-color: #cbcdce;
-  background-image: url("../images/hero/divider.svg"), url("../images/hero/hero_background.jpg");
-  background-size: 100%, cover;
-  background-repeat: no-repeat;
-  background-position: bottom center, center center;
+  background-image: url("../images/hero/hero_background.jpg");
+  background-size: cover;
+
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 57px;
+  left: 0;
+  background: url("../images/hero/divider.svg") no-repeat;
+  bottom: -1px;
+  z-index: 1;
 }
 
 .hero-title {
@@ -661,6 +673,299 @@ img {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.modal-container-clos {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  box-sizing: border-box;
+  width: 717px;
+  height: 576px;
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 50%;
+  background-image: url(../images/modal/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover{
+  background: #E6E6E6;
+  background-image: url(../images/modal/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:focus {
+  background: #E6E6E6;
+  outline: 2px solid #83B3D3;
+  border-radius: 50%;
+  background-image: url(../images/modal/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:active {
+  outline: none;
+  opacity: 0.5;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.search-form {
+  width: 577px;
+  height: 384px;
+  margin: 0;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: 137px 440px;
+  grid-template-rows: 48px 21px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.arrival-text {
+  grid-column-start: 2;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ff5757;
+}
+
+.departute-text {
+  grid-column-start: 2;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.guests {
+  display: flex;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.arrival-data-title,
+.departure-data-title,
+.adults-guests-title,
+.children-guests-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+
+}
+
+.split {
+  margin-left: auto;
+}
+
+.field {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background: #f2f2f2;
+  border: 0;
+  width: 440px;
+  height: 48px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.field:hover{
+  background: #E6E6E6;
+}
+
+.field:focus {
+  background: #E6E6E6;
+  outline: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.field:not(:placeholder-shown) {
+  background-color: #f2f2f2;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.guests-field {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background: #f2f2f2;
+  border: 0;
+  width: 110px;
+  height: 48px;
+  margin-left: 46px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.children-guests-field {
+  margin-left: 36px;
+}
+
+.guests-field::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.guests-field:hover{
+  background: #E6E6E6;
+}
+
+.guests-field:focus {
+  background: #E6E6E6;
+  outline: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.guests-field:not(:placeholder-shown) {
+  background-color: #f2f2f2;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.children-info {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  background-image: url(../images/modal/tooltip.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: auto 10px ;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  left: -120px;
+  top: 41px;
+  border: none;
+}
+
+.triangle {
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: 32px;
+  left: 3px;
+  content: "";
+  background-image: url(../images/modal/triangle.svg) ;
+  display: none;
+}
+
+.children-info:hover .triangle,
+.children-info:focus .triangle {
+  display: block;
+}
+
+.tooltip-text {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  width: 216px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: #333333;
+  z-index: 1;
+  display: none;
+}
+
+.children-info:hover .tooltip-text,
+.children-info:focus .tooltip-text {
+  display: block;
+}
+
+.search-hotels-button {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color:#83b3d3;
+  border: none;
+  border-radius: 10px;
+  width: 577px;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+.search-hotels-button:hover,
+.search-hotels-button :focus {
+  background-color: #68A2CA;
+}
+
+.search-hotels-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-hotels-button:disabled {
+  color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: default;
+}
+
+.search-hotels-button:disabled:hover {
+  background-color:#82b3d3;
+}
+
 .filters-wrapper {
   background: #3e7fc9;
   background-image: url("../images/filters/filters_background.jpg");
@@ -889,6 +1194,7 @@ img {
 .button-apply:disabled:hover {
   background-color:#82b3d3;
 }
+
 .button-reset{
   font-weight: 700;
   font-size: 16px;
