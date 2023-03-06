@@ -811,6 +811,10 @@ img {
   height: 48px;
   padding: 12px 20px;
   border-radius: 4px;
+  background-image: url(../images/modal/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 400px;
+  ba;
 }
 
 .field:hover{
@@ -1074,10 +1078,13 @@ img {
 }
 
 .hotels-control {
+  position: relative;
+  display: block;
   font-weight: 400;
   line-height: 23px;
   color: #ffffff;
   text-align: left;
+  padding-left: ;
   cursor: pointer;
 }
 
@@ -1085,12 +1092,62 @@ img {
   cursor: pointer;
 }
 
-.control:hover {
+.hotels-control:hover {
   opacity: 50%;
 }
 
-.control:active {
+.hotels-control-input[type="checkbox"]:focus + .control-mark {
+  box-sizing: border-box;
+  background: #E6E6E6;
+  outline : 3px solid #83B3D3;
+}
+
+.hotels-control-input[type="radio"]:focus + .control-mark-radio {
+  box-sizing: border-box;
+  background: #E6E6E6;
+  outline : 3px solid #83B3D3;
+}
+
+.hotels-control:active {
   opacity: 30%;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.hotels-control-input[type="checkbox"]:checked + .control-mark {
+  position: absolute;
+  background-image: url(../images/filters/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.hotels-control-input[type="radio"]:checked + .control-mark-radio {
+  position: absolute;
+  background-image: url(../images/filters/dot.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control {
+  padding-left: 36px;
 }
 
 .hotel-filter-price {
@@ -1103,6 +1160,7 @@ img {
   border: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .hotels-filter-title {
@@ -1142,7 +1200,7 @@ img {
   box-sizing: border-box;
   background: #E6E6E6;
   padding-left: 17px;
-  outline: 3px solid #83B3D3;
+  outline : 3px solid #83B3D3;
 }
 
 .price-wrapper {
@@ -1153,6 +1211,49 @@ img {
   right: 20px;
   top: 12px;
   opacity: 0.3;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #E6E6E6;
+}
+
+.range-toggle:focus {
+  box-sizing: border-box;
+  background: #E6E6E6;
+  padding-left: 17px;
+  outline : 3px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -20px;
 }
 
 .hotel-filter-buttons {

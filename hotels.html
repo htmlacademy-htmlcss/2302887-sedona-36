@@ -68,20 +68,22 @@
               <ul class="hotels-filter-list">
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="checkbox" name="pool" checked>
+                    <input class="visually-hidden hotels-control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control">Бассеин</span>
                   </label>
                 </li>
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="checkbox" name="parking" checked>
+                    <input class="visually-hidden hotels-control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
                     <span class="control">Парковка</span>
                   </label>
                 </li>
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="checkbox" name="wi-fi">
+                    <input class="visually-hidden hotels-control-input " type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
                     <span class="control">Wi-Fi</span>
                   </label>
                 </li>
@@ -92,19 +94,22 @@
               <ul class="hotels-filter-list">
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="radio" name="host-type" value="hotel" checked>
+                    <input class="visually-hidden hotels-control-input" type="radio" name="host-type" value="hotel" checked>
+                    <span class="control-mark-radio"></span>
                     <span class="control">Гостиница</span>
                   </label>
                 </li>
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="radio" name="host-type" value="motel">
+                    <input class="visually-hidden hotels-control-input" type="radio" name="host-type" value="motel">
+                    <span class="control-mark-radio"></span>
                     <span class="control">Мотель</span>
                   </label>
                 </li>
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
-                    <input class="hotels-control-input" type="radio" name="host-type" value="apartments">
+                    <input class="visually-hidden hotels-control-input" type="radio" name="host-type" value="apartments">
+                    <span class="control-mark-radio"></span>
                     <span class="control">Апартаменты</span>
                   </label>
                 </li>
@@ -126,6 +131,12 @@
                   </lable>
                 </div>
               </fieldset>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 1px; width: 207px">
+                  <button class="range-toggle toggle-min" type="button"></button>
+                  <button class="range-toggle toggle-max" type="button"></button>
+                 </div>
+              </div>
             </div>
             <div class="hotel-filter-buttons">
               <button class="button-apply" type="submit">Применить</button>
