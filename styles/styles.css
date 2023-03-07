@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  /* min-width: 1280px; */
+  min-width: 1200px;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif, Arial;
@@ -61,6 +61,8 @@ img {
 }
 
 .navigation {
+  position: relative;
+  z-index: 1;
   display: flex;
   max-width: 1060px;
   margin-left: 70px;
@@ -68,18 +70,16 @@ img {
 }
 
 .navigation-logo {
-  position: relative;
-  z-index: 1;
   margin-right: 30px;
   height: 64px;
 }
 
 .logo:hover {
-  opacity: 60%;
+  opacity: 70%;
 }
 
 .logo:active {
-  opacity: 30%;
+  opacity: 50%;
 }
 
 .navigation-list {
@@ -117,6 +117,10 @@ img {
   color: #000000;
 }
 
+.navigation-current {
+  cursor: default;
+}
+
 .navigation-current::before {
   position: absolute;
   content: "";
@@ -124,6 +128,14 @@ img {
   left: 16px;
   right: 16px;
   border-bottom: 2px solid #756257;
+}
+
+.mouse:hover {
+  opacity: 60%;
+}
+
+.mouse:active {
+  opacity: 30%;
 }
 
 .navigation-link-user {
@@ -134,7 +146,7 @@ img {
 }
 
 .navigation-link-user:hover {
-  opacity: 50%;
+  opacity: 60%;
 }
 
 .navigation-link-user:active {
@@ -313,10 +325,12 @@ img {
   text-align: center;
   margin: 0;
 }
+
 .advantages-item-img {
   width: 800px;
   height: 385px;
 }
+
 .revers {
   flex-direction: row-reverse;
 }
@@ -684,7 +698,7 @@ img {
   z-index: 2;
 }
 
-.modal-container-clos {
+.modal-container-close {
   display: none;
 }
 
@@ -792,7 +806,6 @@ img {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-
 }
 
 .split {
@@ -814,7 +827,6 @@ img {
   background-image: url(../images/modal/calendar.svg);
   background-repeat: no-repeat;
   background-position: 400px;
-  ba;
 }
 
 .field:hover{
@@ -1026,7 +1038,7 @@ img {
 
  .hotels {
   position: relative;
- }
+}
 
 .breadcrumbs-item::before {
   position: absolute;
@@ -1084,7 +1096,6 @@ img {
   line-height: 23px;
   color: #ffffff;
   text-align: left;
-  padding-left: ;
   cursor: pointer;
 }
 
@@ -1146,7 +1157,7 @@ img {
   background-position: center;
 }
 
-.control {
+.control-text {
   padding-left: 36px;
 }
 
@@ -1386,6 +1397,7 @@ img {
   background-image: url("../images/filters/arrow_down_grey.svg");
   cursor: default;
 }
+
 .view-list {
   display: flex;
   width: 160px;
@@ -1483,7 +1495,6 @@ img {
 .hotel-card-title:active {
   opacity: 30%;
 }
-
 
 .hotel-card-price {
   display: flex;
