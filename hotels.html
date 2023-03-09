@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Отели Седоны, Аризона, США</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -18,7 +19,7 @@
             <a class="navigation-link mouse" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link mouse" href=https://en.wikipedia.org/wiki/Sedona,_Arizona"">О Седоне</a>
+            <a class="navigation-link mouse" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-current">Гостиницы</a>
@@ -90,7 +91,7 @@
               </ul>
             </fieldset>
             <fieldset class="hotels-filter-group-type">
-              <legend class="hotels-filter-title">Тип жилья:</legend>
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
               <ul class="hotels-filter-list">
                 <li class="hotels-filter-item">
                   <label class="hotels-control">
@@ -118,18 +119,14 @@
             <div class="hotel-filter-price">
               <fieldset class="hotels-filter-group-price">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <div class="range-wrapper-inputs">
-                  <lable class="hotels-control-price">
-                    <div class="price-wrapper">
+                  <label class="hotels-control-price" for="from">
                       <span class="from-to">от</span>
-                      <input class="range-input" type="number" value="0" name="min-price">
-                    </div>
-                    <div class="price-wrapper">
+                      <input class="range-input" type="number" id="from" value="0" name="min-price">
+                  </label>
+                  <label class="hotels-control-price" for="to">
                     <span class="from-to">до</span>
-                    <input class="range-input max" type="number" value="9000" name="max-price">
-                    </div>
-                  </lable>
-                </div>
+                    <input class="range-input max" type="number" id="to" value="9000" name="max-price">
+                  </label>
               </fieldset>
               <div class="range-scale">
                 <div class="range-bar" style="left: 1px; width: 207px">
@@ -147,9 +144,9 @@
       </div>
       <section class="filters-view">
         <h2 class="visually-hidden">Список отфильтрованных гостиниц</h2>
-        <p class="select-title">Найдено гостиниц:<span>38</span></p>
+        <p class="select-title">Найдено гостиниц:<span> 38</span></p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
@@ -180,7 +177,7 @@
             </a>
             <div class="hotel-card-price">
               <span>Гостиница</span>
-              <span>от 4000 ₽</span>
+              <span>От 4000 ₽</span>
             </div>
             <div class="button-row">
               <a class="button-card" href="#">Подробнее</a>
@@ -199,7 +196,7 @@
             </a>
             <div class="hotel-card-price">
               <span>Гостиница</span>
-              <span class="hotel-card-cost">от 5000 ₽</span>
+              <span class="hotel-card-cost">От 5000 ₽</span>
             </div>
             <div class="button-row">
               <a class="button-card" href="#">Подробнее</a>
@@ -218,7 +215,7 @@
             </a>
             <div class="hotel-card-price">
               <span>Гостиница</span>
-              <span class="hotel-card-cost">от 2500 ₽</span>
+              <span class="hotel-card-cost">От 2500 ₽</span>
             </div>
             <div class="button-row">
               <a class="button-card" href="#">Подробнее</a>
@@ -237,7 +234,7 @@
             </a>
             <div class="hotel-card-price">
               <span>Гостиница</span>
-              <span class="hotel-card-cost">от 1500 ₽</span>
+              <span class="hotel-card-cost">От 1500 ₽</span>
             </div>
             <div class="button-row">
               <a class="button-card" href="#">Подробнее</a>
