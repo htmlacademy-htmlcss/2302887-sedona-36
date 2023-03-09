@@ -687,13 +687,6 @@ img {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
-
-
-
-
-
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -706,7 +699,7 @@ img {
 }
 
 .modal-container-close {
-  displa: none;
+  display: none;
 }
 
 .modal {
@@ -748,7 +741,7 @@ img {
 
 .modal-close-button:focus {
   background: #E6E6E6;
-  outline: 2px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 50%;
   background-image: url(../images/modal/close.svg);
   background-repeat: no-repeat;
@@ -917,7 +910,6 @@ img {
 .children-info:focus .tooltip-text {
   display: block;
 }
-
 
 .quantity-wrapper {
   display: flex;
