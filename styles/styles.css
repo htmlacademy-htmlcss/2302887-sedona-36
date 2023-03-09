@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1280px;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif, Arial;
@@ -310,6 +310,10 @@ img {
   margin: 0;
   padding-bottom: 31px;
   margin-bottom: 31px;
+}
+
+.shift {
+  margin-left: -3px;
 }
 
 .advantages-item-title::after {
