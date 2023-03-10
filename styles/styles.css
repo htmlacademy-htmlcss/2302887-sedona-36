@@ -588,7 +588,7 @@ img {
   display: flex;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: "PT Sans, sans-serif, Arial";
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -673,7 +673,6 @@ img {
 
 .contacts-phone-namber {
   display: block;
-  font-family: "PT Sans, sans-serif, Arial";
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
