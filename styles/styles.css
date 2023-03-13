@@ -1284,8 +1284,15 @@ img {
 }
 
 .max {
-  margin-left: 3px;
+  margin-left: 2px;
   border-radius: 0 4px 4px 0;
+}
+
+.range-input:focus {
+  padding-left: 17px;
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border: none;
 }
 
 .range-input::-webkit-inner-spin-button {
