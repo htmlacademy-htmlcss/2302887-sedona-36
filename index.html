@@ -10,7 +10,7 @@
 
   <body>
   <div class="page-container">
-    <header class="page-header">
+    <header>
       <nav class="navigation">
         <a class="navigation-logo">
           <img src="images/header/logo_sedona.svg" width="140"  height= "70" alt="Логотип Седоны: мост дъявола над ущельем, внизу надпись: City of Sedona.">
@@ -28,7 +28,7 @@
         </ul>
         <ul class="navigation-list-user">
           <li class="navigation-item">
-            <a class="navigation-link-user search" href="#">
+            <a class="navigation-link-user" href="#">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
@@ -89,7 +89,7 @@
             </li>
         </ul>
       </section>
-      <section class="features">
+      <section>
         <h2 class="visually-hidden">Особенности Седоны</h2>
           <p class="features-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="features-text">Опытный персонал и качественное обслуживание!</p>
@@ -199,30 +199,28 @@
         <button class="modal-close-button cross" type="reset">
           <span class="visually-hidden">Закрыть.</span>
         </button>
-        <section class="modal-content">
+        <section>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="arrival-data-title" for="arrival">Дата Заезда:</label>
               <input class="arrival-data-field" type="text" id="arrival" name="arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
               <span class="arrival-text">Мы не можем отправить вас в прошлое.</span>
-              <span class="visually-hidden arrival-text">Сообщение об ошибке.</span>
             </p>
             <p class="field-group">
               <label class="departure-data-title" for="arrival">Дата Выезда:</label>
               <input class="departure-data-field" type="text" id="departure" name="departure" value="1 сентября 2023" placeholder="Укажите дату" required>
               <span class="departute-text">На эти даты есть свободные номера. Пока есть.</span>
-              <span class="visually-hidden departute-text">Сообщение об ошибке.</span>
             </p>
             <div class="guests">
               <label class="adults-guests-title" for="adults">Взрослые:</label>
               <div class="quantity-wrapper">
                 <button class="modal-button" type="button">
-                  <span class="visually-hidden">Уменьшения количества взрослых.</span>
+                  <span class="visually-hidden">Уменьшение количества взрослых.</span>
                 </button>
                 <input class="guest-field" type="number" id="adults" name="adults" value="2" required>
                 <button class="modal-button plus-button" type="button">
-                  <span class="visually-hidden">Увеличения количества взрослых.</span>
+                  <span class="visually-hidden">Увеличение количества взрослых.</span>
                 </button>
               </div>
               <label class="children-guests-title" for="children">Дети:</label>
@@ -236,11 +234,11 @@
               </button>
               <div class="quantity-wrapper">
                 <button class="modal-button" type="button">
-                  <span class="visually-hidden">Уменьшения количества детей.</span>
+                  <span class="visually-hidden">Уменьшение количества детей.</span>
                 </button>
                 <input class="guest-field" type="number" id="children" name="children" value="2" required>
                 <button class="modal-button plus-button" type="button">
-                  <span class="visually-hidden">Увеличения количества детей.</span>
+                  <span class="visually-hidden">Увеличение количества детей.</span>
                 </button>
               </div>
             </div>
