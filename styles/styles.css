@@ -1217,8 +1217,8 @@ img {
 
 .hotels-control-input[type="checkbox"]:focus + .control-mark {
   box-sizing: border-box;
-  background: #E6E6E6;
   outline : 3px solid #83B3D3;
+
 }
 
 .hotels-control-input[type="checkbox"]:disabled + .control-mark {
@@ -1228,7 +1228,6 @@ img {
 
 .hotels-control-input[type="radio"]:focus + .control-mark-radio {
   box-sizing: border-box;
-  background: #E6E6E6;
   outline : 3px solid #83B3D3;
 }
 
