@@ -1322,15 +1322,8 @@ img {
 }
 
 .max {
-  margin-left: 2px;
+  margin-left: 3px;
   border-radius: 0 4px 4px 0;
-}
-
-.range-input:focus {
-  padding-left: 17px;
-  background: #E6E6E6;
-  outline: 3px solid #83B3D3;
-  border: none;
 }
 
 .range-input::-webkit-inner-spin-button {
@@ -1348,10 +1341,8 @@ img {
 }
 
 .range-input:focus {
-  padding-left: 17px;
   background: #E6E6E6;
-  outline: none;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .range-input:hover:disabled {
