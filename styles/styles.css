@@ -1213,7 +1213,7 @@ img {
 
 .hotels-control:active {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  backgroun: #3F5E72
+  background: #3F5E72
 }
 
 .hotels-control-input {
