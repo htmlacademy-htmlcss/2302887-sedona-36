@@ -660,11 +660,12 @@ img {
   fill: #83B3D3;
 }
 
-.social-icon:hover {
+.social-button:hover .social-icon,
+.social-button:focus .social-icon {
   fill: #68A2CA;
 }
 
-.social-icon:active {
+.social-button:active .social-icon{
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -718,12 +719,12 @@ img {
   fill: #000000;
 }
 
-.website-logo:hover,
-.website-logo:focus {
+.website-item:hover .website-logo,
+.website-item:focus .website-logo {
   fill: #756157;
 }
 
-.website-logo:active {
+.website-item:active .website-logo {
   fill: rgba(117, 97, 87, 0.3);
 }
 
